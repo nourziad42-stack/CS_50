@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: On a large random file, sort1 takes much longer than an already-sorted file of the same size. For already-sorted files, sort1 returns results almost instantaneously, regardless of size. This suggests that sort1 has a different upper bound runtime than lower bound runtime. This is consistent with Bubble Sort, which runs in O(n^2) and Ω(n).
+
+sort2 uses: Merge Sort
+
+How do you know?: On larger random files, sort2 is the fastest of the three sorts. Since Merge Sort runs in O(n log n), while Bubble Sort and Selection Sort run in O(n^2), sort2 is likely Merge Sort.
+
+sort3 uses: Selection Sort
+
+How do you know?: On a large random file, sort3 takes about as long as sort1, but it does not perform better when the list is already sorted. This suggests that the algorithm runs in O(n^2) and Ω(n^2), which is consistent with Selection Sort.
